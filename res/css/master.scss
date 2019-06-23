@@ -1,0 +1,85 @@
+$yellow: #f6d55c;
+$navy: #173f5f;
+$blue: #20639b;
+$turqouise: #3caea3;
+$orange: #ed553b;
+$black: #343a40;
+
+
+$primary-color: $yellow;
+$header-size: 3em;
+$header-font: 'Damion';
+$body-font: 'Montserrat';
+
+
+body{
+    font-family: $body-font;
+    background: url('../img/mountains3.jpg');
+    color: whitesmoke;
+    overflow: hidden;
+    background-size: cover;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    color: $primary-color;
+}
+//button that shows when navbar gets collapsed
+.navbar-toggler{
+    margin-right:1em;
+}
+
+.nav-item {
+    color: #6c757d;
+    font-size:1.5em;
+}
+.nav-item:hover{
+    color: $primary-color;
+}
+
+.site-header {
+    font-size: 7em;
+    color: $primary-color;
+    font-weight: normal;
+    font-family: $header-font;
+    margin:0;
+    padding:0;
+}
+
+
+.navbar-header {
+    font-family: $header-font;
+    font-size:$header-size;
+    color: $primary-color;
+    margin:0;
+    margin-left: 1em;
+    padding:0;
+    
+}
+.header-wrapper{
+    background: none;
+}
+.pages-group{
+    margin-right:2em;
+}
+
+.fa-bars {
+    color: $primary-color;
+    font-size: 2em;
+}
+.jumbotron {
+    background: none;
+    margin-top:0;
+    padding-top:0;
+}
+.cta {
+    background: none;
+    border: 4px solid $primary-color;
+    color: $primary-color;
+    padding:15px;
+    font-size:1.25em;
+}
+.lead{
+    color:whitesmoke;
+    font-size:1.5em;
+}
