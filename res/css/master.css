@@ -1,9 +1,7 @@
 body {
   font-family: "Montserrat";
-  background: url("../img/mountains3.jpg");
-  color: whitesmoke;
-  overflow: hidden;
-  background-size: cover;
+  overflow-x: hidden;
+  background: #343a40;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,5 +70,40 @@ h1, h2, h3, h4, h5, h6 {
 .lead {
   color: whitesmoke;
   font-size: 1.5em;
+}
+
+.landing {
+  background: url("../img/mountains3.jpg");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  background-size: cover;
+}
+
+.page-header {
+  font-size: 5em;
+  margin-top: 5%;
+}
+
+.bio {
+  color: #343a40;
+  width: 60%;
+  margin-left: 10%;
+  font-size: 1.5em;
+}
+
+.me {
+  border: 3px solid #343a40;
+  width: 20%;
+}
+
+.about {
+  padding: 2em;
+  background: red;
+}
+
+.work {
+  background: blue;
+  padding: 2em;
+  padding-top: 4em;
 }
 /*# sourceMappingURL=master.css.map */

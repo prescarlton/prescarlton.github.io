@@ -14,12 +14,10 @@ $body-font: 'Montserrat';
 
 body{
     font-family: $body-font;
-    background: url('../img/mountains3.jpg');
-    color: whitesmoke;
-    overflow: hidden;
-    background-size: cover;
-
+    overflow-x: hidden;
+    background: $black;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font;
     color: $primary-color;
@@ -82,4 +80,36 @@ h1, h2, h3, h4, h5, h6 {
 .lead{
     color:whitesmoke;
     font-size:1.5em;
+}
+.landing {
+    background: url('../img/mountains3.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    // clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+    background-size: cover;
+}
+.page-header{
+    font-size: 5em;
+    margin-top:5%;
+}
+
+.bio {
+    color: $black;
+    width:60%;
+    margin-left:10%;
+    font-size:1.5em;
+}
+.me{
+    border:3px solid $black;
+    width:20%;
+}
+.about{
+    padding:2em;
+    // clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    background:red;
+}
+.work {
+    background: blue;
+    // clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    padding:2em;
+    padding-top: 4em;
 }
