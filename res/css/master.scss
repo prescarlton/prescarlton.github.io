@@ -4,22 +4,29 @@ $blue: #20639b;
 $turqouise: #3caea3;
 $orange: #ed553b;
 $black: #343a40;
+$white: #b0b0b0;
 
-
-$primary-color: $yellow;
+$primary-color: $turqouise;
 $header-size: 3em;
 $header-font: 'Damion';
 $body-font: 'Montserrat';
 
-
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
 body{
     font-family: $body-font;
     overflow-x: hidden;
-    background: $black;
+    // background: whitesmoke;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font;
+    color: $primary-color;
+}
+.link{
     color: $primary-color;
 }
 //button that shows when navbar gets collapsed
@@ -34,16 +41,17 @@ h1, h2, h3, h4, h5, h6 {
 .nav-item:hover{
     color: $primary-color;
 }
-
+#navbar{
+    background: #f5f5f5;
+}
 .site-header {
     font-size: 7em;
     color: $primary-color;
     font-weight: normal;
     font-family: $header-font;
-    margin:0;
-    padding:0;
-}
+    text-align: left;
 
+}
 
 .navbar-header {
     font-family: $header-font;
@@ -83,33 +91,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 .landing {
     background: url('../img/mountains3.jpg');
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    // clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
     background-size: cover;
+    width:100%;
+
 }
 .page-header{
-    font-size: 5em;
-    margin-top:5%;
+    // font-size:9em;
+    font-size:5em;
+    text-align: center;
+    
 }
-
-.bio {
-    color: $black;
-    width:60%;
-    margin-left:10%;
-    font-size:1.5em;
+#about{
+    background: #343A40;
+    padding: 5% 0 5% 0;
 }
 .me{
-    border:3px solid $black;
-    width:20%;
+    height:40%;
+    text-align: center;
 }
-.about{
+
+.img-wrapper{
+    border-bottom: 2px solid #808080;
+    padding-bottom:2em;
+    width:60%;
+}
+.bio {
+    // text-align:left;
+    color: $white;
+    font-weight: lighter;
+}
+.job-title{
+    font-family: $body-font;
+    color: #808080;
+    font-weight: bold;
+    padding-bottom:1em;
+}
+.media-body{
     padding:2em;
-    // clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-    background:red;
 }
-.work {
-    background: blue;
-    // clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-    padding:2em;
-    padding-top: 4em;
+.next-page{
+    color:$primary-color;
+    font-family: $header-font;
+    font-size:48px;
 }
+.next-page-link {
+    color: $primary-color;
+    transition: 0.3s color;
+    
+}
+.next-page-link:hover{
+    color:$white;
+}
+

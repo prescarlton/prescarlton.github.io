@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>preston</title>
+
+    <!-- jquery script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,19 +24,16 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/081e7ada84.js"></script>
 
-    <!-- flickity css -->
-    <link rel="stylesheet" href="res/css/flickity.css">
-    <!-- flickity script -->
-    <script src="res/js/flickity.pkgd.min.js"></script>
     <!-- custom script -->
     <script src="res/js/main.js"></script>
+
+
 
 
 </head>
 
 <body>
-
-    <nav class="fixed-top navbar navbar-expand-lg d-flex">
+    <nav class="fixed-top navbar navbar-expand-lg d-flex" id='navbar'>
         <h1 class="navbar-header">PC</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false">
@@ -41,8 +43,8 @@
         <div class="nav justify-content-end collapse navbar-collapse pages-group" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">home</a>
-                <a class="nav-item nav-link" href="#">about</a>
-                <a class="nav-item nav-link" href="#">work</a>
+                <a class="nav-item nav-link" href="#about">about</a>
+                <a class="nav-item nav-link" href="#work">work</a>
                 <a class="nav-item nav-link" href="#">contact</a>
             </div>
         </div>
@@ -62,34 +64,46 @@
 
 
     </div>
-    <div class='about container-fluid'>
-        <h1 class='site-header'>about me</h1>
-        <br>
-        <div class="media">
-            <img class="align-self-center me rounded-circle" src='res/img/me-square.jpg'>
-            <div class="media-body align-self-center">
-                <p class='bio'>I'm a software developer from Charleston, SC. I attended the College of Charleston
-                    for two semesters, but ultimately decided it wasn't for me at the time. Soon after, I dropped out to 
-                    pursue a career as a software developer. Currently, I'm working part time as a junior software 
-                    developer in I'm not living in a refridgerator box yet, so I'd say I'm doing pretty good for myself.
-                </p>
+    <div id='about'>
+        <center>
+
+            <div>
+                <h1 class='page-header'>about me.</h1>
+                <br>
+                <div class='about-content'>
+                    <div class='img-wrapper'>
+                        <img class="align-self-center me rounded-circle " src='res/img/me-square.jpg'>
+                    </div>
+                    <div class="media-body">
+                        <h3 class='job-title mt-0'>Junior Software Developer from Charleston, SC</h3>
+                        <p class='bio'>I've been programming as a hobby since I was
+                            in fourth grade (about 10 years ago), and recently started working as a junior software
+                            developer at Moondog Animation Studio. While working at Moondog, I've been introduced to
+                            <span class='link'>a lot of new software</span> and I've also picked up <span class='link'>a few new languages</span>.
+                            I'm not yet living in a refridgerator box, so I'd say I'm doing pretty good for myself.
+                            <br>
+                            <br>
+                            Of course, being an avid programmer, I also work on a few pet projects in my spare time. You
+                            can
+                            check some of those out here.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
+            <div class='next-page'>work <br>
+                <a href='#work' class='next-page-link'><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </center>
     </div>
-    <div class='container-fluid d-flex work h-100'>
-        <h1 class='site-header'>work</h1>
 
 
-    </div>
 
 
 
 
     <!-- bootstrap/jquery js frameworks -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
