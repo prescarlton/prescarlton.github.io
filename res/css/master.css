@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about {
-  background: #343A40;
+  background: #343a40;
   padding: 5% 0 5% 0;
 }
 
@@ -140,5 +140,74 @@ h1, h2, h3, h4, h5, h6 {
 
 .next-page-link:hover {
   color: #b0b0b0;
+}
+
+.vl {
+  visibility: hidden;
+}
+
+#work {
+  background: whitesmoke;
+}
+
+.project-container {
+  max-width: 80%;
+  margin-bottom: 1em;
+}
+
+.project-thumbnail {
+  max-width: 100%;
+}
+
+.project-title {
+  text-align: left;
+  font-family: "Montserrat";
+}
+
+.title-content {
+  text-align: left;
+  max-width: 80%;
+}
+
+.page-description {
+  text-align: left;
+  color: #343a40;
+}
+
+@media only screen and (min-width: 768px) {
+  .job-title {
+    font-size: 36px;
+  }
+  .vl {
+    display: inline;
+    border-left: 2px solid #808080;
+    visibility: visible;
+  }
+  .about-content {
+    width: 70%;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img-wrapper {
+    border-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 2em;
+    width: auto;
+    display: inline-block;
+  }
+  .media-body {
+    display: inline-block;
+    width: 50%;
+  }
+  .page-header {
+    text-align: left;
+    width: 70%;
+    font-size: 8em;
+  }
+  .bio {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=master.css.map */

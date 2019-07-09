@@ -10,4 +10,3 @@ window.addEventListener('load', function () {
     //logic to make navbar change color when scrolling
 
 });
-
